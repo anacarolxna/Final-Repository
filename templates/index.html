@@ -48,10 +48,10 @@
     <div class="dropdown" style="float:right;">
       <button class="dropbtn">Menu</button>
       <div class="dropdown-content">
-        <a href="#" style = "font-family:monospace,garamond,serif">Link 1</a>
-        <a href="#" style = "font-family:monospace,garamond,serif">Link 2</a>
+        <a href="http://127.0.0.1:5000/mysummer" style = "font-family:monospace,garamond,serif">My Summer</a>
+        <a href="http://127.0.0.1:5000/favoriteartists" style = "font-family:monospace,garamond,serif">Favorite Artists</a>
         <a href="#" style = "font-family:monospace,garamond,serif">Link 3</a>
-        <a href="#" style = "font-family:monospace,garamond,serif">Fav Website</a>
+        <a href="http://tech.jonathangardner.net/wiki/Why_Java_Sucks" style = "font-family:monospace,garamond,serif">Favorite Website</a>
       </div>
     </div>
     
@@ -59,6 +59,10 @@
     <p class = "indented" style = "font-family:open sans,garamond,serif;font-size:40px;text-align:center">
          ANA CAROLINA OLIVEIRA
       </p>
+      <img src="{{url_for('static', filename='background.JPG')}}" 
+          alt:"Image"  style = "width: 400px; height:500px; float:left" />
+      <img src="{{url_for('static', filename='background.JPG')}}" 
+          alt:"Image"  style = "width: 400px; height:500px; float:right" />
       <center>
           <img src="{{url_for('static', filename='picture.JPG')}}" 
           alt:"Image"  style = "width: 500px; height:500px" />

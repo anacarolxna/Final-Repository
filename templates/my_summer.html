@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>My Summer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+<p style = "font-family:open sans,garamond,serif;font-size:40px;text-align:center">
+         MY SUMMER
+      </p>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="{{url_for('static', filename='merger.jpg')}}" 
+          alt:"merger"  style="width: 100%;" />
+  <img class="mySlides" src="{{url_for('static', filename='ligo.png')}}" 
+          alt:"Ligo"  style="width:100%">
+  <img class="mySlides" src="{{url_for('static', filename='merger2.jpg')}}" 
+          alt:"merger2"  style="width:100%">
+  <img class="mySlides" src="{{url_for('static', filename='skymap.jpg')}}" 
+          alt:"skymap"  style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<p style = "font-family:monospace,garamond,serif;font-size:20px;text-align:center">
+         Despite all the craziness of this semester, 
+         this summer I will be working on a very interesting project in the GECo lab, 
+         the Columbia Experimental Gravity Group. In this summer research position, 
+         I will be responsible for helping with three main tasks. 
+         The first one is to help characterize the advanced LIGO timing system 
+         performance during the O3 data-taking run to ensure the quality of the 
+         gravitational wave discoveries. By measuring the timing performance, 
+         it will be possible to arrive at more accurate/precise data and 
+         advance the knowledge about GW. Another task will consist of
+          investigating machine learning methods that can be used in detector 
+          characterization studies to improve the data quality and GW detectors. 
+          The last task is to help with multimessenger searches, which are data 
+          analysis approaches that combine various sources that together 
+          provide deeper insight into astronomical events than individual 
+          signals alone. These searches can help the understanding of elusive 
+          cosmic events, processes, and GW themselves. In this summer project, 
+          I will be required to use a lot of Python to deal with the data of 
+          the observations, so 1006 was definitely a pretty helpful class!
+ 
+
+      </p>
+</body>
+</html>
