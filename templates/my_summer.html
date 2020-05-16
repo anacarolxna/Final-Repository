@@ -6,19 +6,25 @@
 <style>
 .mySlides {display:none;}
 </style>
+<style>
+div {
+  margin-right: 150px;
+  margin-left: 750px;
+}
+</style>
 <body>
 <p style = "font-family:open sans,garamond,serif;font-size:40px;text-align:center">
          MY SUMMER
       </p>
-<div class="w3-content w3-display-container">
+<div class="w3-content w3-display-container" style="float:left;">
   <img class="mySlides" src="{{url_for('static', filename='merger.jpg')}}" 
-          alt:"merger"  style="width: 100%;" />
-  <img class="mySlides" src="{{url_for('static', filename='ligo.png')}}" 
-          alt:"Ligo"  style="width:100%">
+          alt:"merger"  style="width: 700px" />
+  <img class="mySlides" src="{{url_for('static', filename='ligo1.png')}}" 
+          alt:"Ligo"  style="width:700px">
   <img class="mySlides" src="{{url_for('static', filename='merger2.jpg')}}" 
-          alt:"merger2"  style="width:100%">
-  <img class="mySlides" src="{{url_for('static', filename='skymap.jpg')}}" 
-          alt:"skymap"  style="width:100%">
+          alt:"merger2"  style="width:700px">
+  <img class="mySlides" src="{{url_for('static', filename='skymaps.jpg')}}" 
+          alt:"skymap"  style="width:700px">
 
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -44,7 +50,7 @@ function showDivs(n) {
 }
 </script>
 
-<p style = "font-family:monospace,garamond,serif;font-size:20px;text-align:center">
+<div style = "font-family:monospace,garamond,serif;font-size:15px;text-align:center">
          Despite all the craziness of this semester, 
          this summer I will be working on a very interesting project in the GECo lab, 
          the Columbia Experimental Gravity Group. In this summer research position, 
@@ -65,6 +71,6 @@ function showDivs(n) {
           the observations, so 1006 was definitely a pretty helpful class!
  
 
-      </p>
+      </div>
 </body>
 </html>

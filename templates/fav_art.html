@@ -2,10 +2,85 @@
 <html>
    <head>
       <title>Favorite artists</title>
-   </head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<style>
+div {
+  margin-right: 100px;
+  margin-left: 650px;
+}
+</style>
+<body>
+<p style = "font-family:open sans,garamond,serif;font-size:40px;text-align:center">
+         MY FAVORITE ARTIST
+      </p>
+<div id="slideshow1" class="w3-content w3-display-container" style="float:left;">
+  <img class="mySlides" src="{{url_for('static', filename='b1.JPG')}}" 
+          alt:"BASQUIAT"  style="width: 600px" />
+  <img class="mySlides" src="{{url_for('static', filename='b2.JPG')}}" 
+          alt:"BASQUIAT"  style="width:600px">
+  <img class="mySlides" src="{{url_for('static', filename='b3.JPG')}}" 
+          alt:"BASQUIAT"  style="width:600px">
+  <img class="mySlides" src="{{url_for('static', filename='b4.JPG')}}" 
+          alt:"BASQUIAT"  style="width:600px">
+  <img class="mySlides" src="{{url_for('static', filename='b5.JPG')}}" 
+          alt:"BASQUIAT"  style="width:600px">
+  <img class="mySlides" src="{{url_for('static', filename='b6.JPG')}}" 
+          alt:"BASQUIAT"  style="width:600px">
 
-   <body>
-   
-   </body>
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+          
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<div style = "font-family:open sans,garamond,serif;font-size:20px;text-align:center">
+         BASQUIAT
+
+      </div>
+<div style = "font-family:monospace,garamond,serif;font-size:15px;text-align:center">
+         “A poet, musician, and graffiti prodigy in late-1970s New York, 
+         Jean-Michel Basquiat had honed his signature painting style of 
+         obsessive scribbling, elusive symbols and diagrams, and mask-and-skull 
+         imagery by the time he was 20. “I don’t think about art while I work,” 
+         he once said. “I think about life.” Basquiat drew his subjects from 
+         his own Caribbean heritage—his father was Haitian and his mother of 
+         Puerto Rican descent—and a convergence of African-American, African,
+          and Aztec cultural histories with Classical themes and contemporary
+           heroes like athletes and musicians. Often associated with Neo-expressionism, 
+           Basquiat received massive acclaim in only a few short years, 
+           showing alongside artists like Julian Schnabel, David Salle, 
+           and Francesco Clemente. In 1983, he met Andy Warhol, who would 
+           come to be a mentor and idol. The two collaborated on a series 
+           of paintings before Warhol’s death in 1987, followed by Basquiat’s 
+           own untimely passing a year later.” (Artsy)
+
+      </div>
+</body>
 
 </html>
